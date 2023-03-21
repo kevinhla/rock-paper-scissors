@@ -19,15 +19,15 @@ function playRound(playerSelection, computerSelection){
     console.log(computerSelection);
     if (playerSelection === computerSelection)
     {
-        return 1;
+        return "It is a tie";
     }
     else if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock")
     {
-        return 2;
+        return "You have won the round!";
     }
     else if (playerSelection === "rock" && computerSelection === "paper" || playerSelection === "scissors" && computerSelection || playerSelection === "paper" && computerSelection === "scissors")
     {
-        return 3;
+        return "You have lost the round.";
     }
 }
 
@@ -36,6 +36,4 @@ let computerSelection = getComputerChoice();
 let playerSelection = prompt("Rock, Paper, or Scissors?").toLowerCase();
 
 
-console.log(playerSelection);
-console.log(computerSelection);
 console.log(playRound(playerSelection, computerSelection));
