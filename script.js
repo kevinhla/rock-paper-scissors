@@ -15,8 +15,6 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection){
-    console.log(playerSelection);
-    console.log(computerSelection);
     if (playerSelection === computerSelection)
     {
         return "It is a tie";
